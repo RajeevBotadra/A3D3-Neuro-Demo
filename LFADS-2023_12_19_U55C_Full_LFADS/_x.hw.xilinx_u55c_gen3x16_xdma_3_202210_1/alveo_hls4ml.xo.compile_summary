@@ -1,0 +1,252 @@
+<ENTRY>
+{
+ "thisFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu May 16 17:53:59 2024",
+ "timestampMillis": "1715907239431",
+ "buildStep": {
+  "cmdId": "b741fc8c-8af5-45ab-9cc3-110fd5c66b59",
+  "name": "v++",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u55c_gen3x16_xdma_3_202210_1 --save-temps --temp_dir ./_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1 -c -k alveo_hls4ml -Isrc -o_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo src/alveo_hls4ml.cpp src/myproject.cpp -DMYPROJ=myproject -DIS_DENSE -I./src/ -I./src/weights -I./src/nnet_utils/ --config config.ini ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "--save-temps",
+   "--temp_dir",
+   "./_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "-c",
+   "-k",
+   "alveo_hls4ml",
+   "-Isrc",
+   "-o_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo",
+   "src/alveo_hls4ml.cpp",
+   "src/myproject.cpp",
+   "-DMYPROJ=myproject",
+   "-DIS_DENSE",
+   "-I./src/",
+   "-I./src/weights",
+   "-I./src/nnet_utils/",
+   "--config",
+   "config.ini"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/config.ini",
+    "content": "[advanced]\nprop=solution.hls_pre_tcl=./config.tcl\nprop=kernel.alveo_hls4ml.kernel_flags=-std=c++11\n\n[connectivity]\nsp=alveo_hls4ml_1.in1:HBM[0]\nsp=alveo_hls4ml_1.in2:HBM[1]\nsp=alveo_hls4ml_1.out:HBM[2]\n\n"
+   }
+  ],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 16 17:53:59 2024",
+ "timestampMillis": "1715907239431",
+ "status": {
+  "cmdId": "b741fc8c-8af5-45ab-9cc3-110fd5c66b59",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu May 16 17:54:03 2024",
+ "timestampMillis": "1715907243193",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "alveo_hls4ml",
+     "file": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/alveo_hls4ml.cpp",
+     "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/myproject.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.2. SW Build 3671529 on 2022-10-13-17:52:11"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 16 17:54:03 2024",
+ "timestampMillis": "1715907243195",
+ "buildStep": {
+  "cmdId": "4443635b-4d8a-4eef-a965-d9012da56189",
+  "name": "vitis_hls",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/alveo_hls4ml.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/alveo_hls4ml.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 16 17:54:03 2024",
+ "timestampMillis": "1715907243196",
+ "status": {
+  "cmdId": "4443635b-4d8a-4eef-a965-d9012da56189",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894296",
+ "status": {
+  "cmdId": "4443635b-4d8a-4eef-a965-d9012da56189",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894669",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/alveo_hls4ml/solution/.autopilot/db/alveo_hls4ml.design.xml",
+  "name": "alveo_hls4ml",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894670",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/alveo_hls4ml/solution/.autopilot/db/.message_syn.xml",
+  "name": "alveo_hls4ml",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894671",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/reports/alveo_hls4ml/hls_reports/alveo_hls4ml_csynth.rpt",
+  "name": "alveo_hls4ml",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894671",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml/alveo_hls4ml/alveo_hls4ml/solution/syn/report/alveo_hls4ml_csynth.xml",
+  "name": "alveo_hls4ml",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:14 2024",
+ "timestampMillis": "1715909894976",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/reports/alveo_hls4ml/system_estimate_alveo_hls4ml.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 16 18:38:19 2024",
+ "timestampMillis": "1715909899527",
+ "status": {
+  "cmdId": "b741fc8c-8af5-45ab-9cc3-110fd5c66b59",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:19 2024",
+ "timestampMillis": "1715909899651",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/reports/alveo_hls4ml/v++_compile_alveo_hls4ml_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 16 18:38:19 2024",
+ "timestampMillis": "1715909899652",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/v++_compile_alveo_hls4ml_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

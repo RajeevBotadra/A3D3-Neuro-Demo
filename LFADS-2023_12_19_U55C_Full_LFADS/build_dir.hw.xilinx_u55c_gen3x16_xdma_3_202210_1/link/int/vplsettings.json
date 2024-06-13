@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "alveo_hls4ml:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/biloba\/Documents\/Repositories\/A3D3-Neuro-Demo\/LFADS-2023_12_19_U55C_Full_LFADS\/build_dir.hw.xilinx_u55c_gen3x16_xdma_3_202210_1\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/biloba\/Documents\/Repositories\/A3D3-Neuro-Demo\/LFADS-2023_12_19_U55C_Full_LFADS\/build_dir.hw.xilinx_u55c_gen3x16_xdma_3_202210_1\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

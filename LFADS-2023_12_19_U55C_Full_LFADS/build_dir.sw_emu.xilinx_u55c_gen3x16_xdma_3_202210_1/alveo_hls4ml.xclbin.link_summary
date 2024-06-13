@@ -1,0 +1,683 @@
+<ENTRY>
+{
+ "thisFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May 20 10:31:40 2024",
+ "timestampMillis": "1716226300174",
+ "buildStep": {
+  "cmdId": "5e2c2d3c-711a-43f0-b273-a1410379d7ec",
+  "name": "v++",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t sw_emu --platform xilinx_u55c_gen3x16_xdma_3_202210_1 --save-temps -g --temp_dir ./build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1 -l -obuild_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin _x.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo --config config.ini --kernel_frequency 199 ",
+  "args": [
+   "-t",
+   "sw_emu",
+   "--platform",
+   "xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "--save-temps",
+   "-g",
+   "--temp_dir",
+   "./build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "-l",
+   "-obuild_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin",
+   "_x.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo",
+   "--config",
+   "config.ini",
+   "--kernel_frequency",
+   "199"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/config.ini",
+    "content": "[advanced]\nprop=solution.hls_pre_tcl=./config.tcl\nprop=kernel.alveo_hls4ml.kernel_flags=-std=c++11\n\n[connectivity]\nsp=alveo_hls4ml_1.in1:HBM[0]\nsp=alveo_hls4ml_1.in2:HBM[1]\nsp=alveo_hls4ml_1.out:HBM[2]\n\n"
+   }
+  ],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:40 2024",
+ "timestampMillis": "1716226300174",
+ "status": {
+  "cmdId": "5e2c2d3c-711a-43f0-b273-a1410379d7ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May 20 10:31:43 2024",
+ "timestampMillis": "1716226303790",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "alveo_hls4ml",
+    "file": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "alveo_hls4ml",
+     "file": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/_x.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/alveo_hls4ml.cpp",
+     "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/myproject.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "alveo_hls4ml_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.2. SW Build 3671529 on 2022-10-13-17:52:11"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 20 10:31:44 2024",
+ "timestampMillis": "1716226304045",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:31:44 2024",
+ "timestampMillis": "1716226304046",
+ "buildStep": {
+  "cmdId": "d08e1218-224e-457f-bc93-6a6158d091b0",
+  "name": "regiongen",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_regiongen.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/../runtime/bin/regiongen_new -v -m /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.xml -r /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.rtd -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.xml",
+   "-r",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.rtd",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:44 2024",
+ "timestampMillis": "1716226304046",
+ "status": {
+  "cmdId": "d08e1218-224e-457f-bc93-6a6158d091b0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:45 2024",
+ "timestampMillis": "1716226305570",
+ "status": {
+  "cmdId": "d08e1218-224e-457f-bc93-6a6158d091b0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:31:45 2024",
+ "timestampMillis": "1716226305573",
+ "buildStep": {
+  "cmdId": "14a78c45-4240-476c-b8e1-81ee1facd7e8",
+  "name": "gcc",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/alveo_hls4ml_kernel_gcc.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include -I /usr/include/x86_64-linux-gnu -std=c++14 -g -D MYPROJ=myproject -D IS_DENSE -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/weights -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/nnet_utils -std=c++11 -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/alveo_hls4ml.o -MP -MF obj/alveo_hls4ml.Cd /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/alveo_hls4ml.cpp -o obj/alveo_hls4ml.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include",
+   "-I",
+   "/usr/include/x86_64-linux-gnu",
+   "-std=c++14",
+   "-g",
+   "-D",
+   "MYPROJ=myproject",
+   "-D",
+   "IS_DENSE",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/weights",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/nnet_utils",
+   "-std=c++11",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/alveo_hls4ml.o",
+   "-MP",
+   "-MF",
+   "obj/alveo_hls4ml.Cd",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/alveo_hls4ml.cpp",
+   "-o",
+   "obj/alveo_hls4ml.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:45 2024",
+ "timestampMillis": "1716226305574",
+ "status": {
+  "cmdId": "14a78c45-4240-476c-b8e1-81ee1facd7e8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:47 2024",
+ "timestampMillis": "1716226307149",
+ "status": {
+  "cmdId": "14a78c45-4240-476c-b8e1-81ee1facd7e8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:31:47 2024",
+ "timestampMillis": "1716226307150",
+ "buildStep": {
+  "cmdId": "9a73c9be-0fb0-45f7-a2c8-853fb69372b0",
+  "name": "gcc",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/alveo_hls4ml_kernel_gcc.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include -I /usr/include/x86_64-linux-gnu -std=c++14 -g -D MYPROJ=myproject -D IS_DENSE -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/weights -I /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/nnet_utils -std=c++11 -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/myproject.o -MP -MF obj/myproject.Cd /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/myproject.cpp -o obj/myproject.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include",
+   "-I",
+   "/usr/include/x86_64-linux-gnu",
+   "-std=c++14",
+   "-g",
+   "-D",
+   "MYPROJ=myproject",
+   "-D",
+   "IS_DENSE",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/weights",
+   "-I",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/src/nnet_utils",
+   "-std=c++11",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/myproject.o",
+   "-MP",
+   "-MF",
+   "obj/myproject.Cd",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/xo/alveo_hls4ml/alveo_hls4ml/cpu_sources/myproject.cpp",
+   "-o",
+   "obj/myproject.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:47 2024",
+ "timestampMillis": "1716226307151",
+ "status": {
+  "cmdId": "9a73c9be-0fb0-45f7-a2c8-853fb69372b0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318821",
+ "status": {
+  "cmdId": "9a73c9be-0fb0-45f7-a2c8-853fb69372b0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318822",
+ "buildStep": {
+  "cmdId": "fc86ae56-e4d4-4a86-80ce-8943c409215b",
+  "name": "ar",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/alveo_hls4ml_ar.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.26/bin/ar -cr /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/alveo_hls4ml.csim_cu.a /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/obj/alveo_hls4ml.o /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/obj/myproject.o",
+  "args": [
+   "-cr",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/alveo_hls4ml.csim_cu.a",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/obj/alveo_hls4ml.o",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml/obj/myproject.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318823",
+ "status": {
+  "cmdId": "fc86ae56-e4d4-4a86-80ce-8943c409215b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318875",
+ "status": {
+  "cmdId": "fc86ae56-e4d4-4a86-80ce-8943c409215b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318878",
+ "buildStep": {
+  "cmdId": "235a4a58-2ade-4c9d-bde2-5f4fa452840f",
+  "name": "g++",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_xcl_top_gpp.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:31:58 2024",
+ "timestampMillis": "1716226318879",
+ "status": {
+  "cmdId": "235a4a58-2ade-4c9d-bde2-5f4fa452840f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320426",
+ "status": {
+  "cmdId": "235a4a58-2ade-4c9d-bde2-5f4fa452840f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320427",
+ "buildStep": {
+  "cmdId": "b2421ab6-96fa-461f-a32d-63dd4e8cd4d0",
+  "name": "g++",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_top_gpp.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,alveo_hls4ml.so -o alveo_hls4ml.so alveo_hls4ml/alveo_hls4ml.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lib/lnx64.o -lhlsmathsim -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel -Wl,-rpath,/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,alveo_hls4ml.so",
+   "-o",
+   "alveo_hls4ml.so",
+   "alveo_hls4ml/alveo_hls4ml.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_1_bitacc_cmodel",
+   "-Wl,-rpath,/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320428",
+ "status": {
+  "cmdId": "b2421ab6-96fa-461f-a32d-63dd4e8cd4d0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320724",
+ "status": {
+  "cmdId": "b2421ab6-96fa-461f-a32d-63dd4e8cd4d0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320893",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320895",
+ "buildStep": {
+  "cmdId": "21a15aad-16aa-4ccb-8986-b29f1d23c4ec",
+  "name": "xclbinutil",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_xclbinutil.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/xclbinutil --add-section BITSTREAM:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.so --force --target sw_emu --add-section :JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.rtd --append-section :JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_xml.rtd --add-section BUILD_METADATA:JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section SYSTEM_METADATA:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/systemDiagramModel.json --output /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.rtd",
+   "--append-section",
+   ":JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/alveo_hls4ml.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/link/int/systemDiagramModel.json",
+   "--output",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:00 2024",
+ "timestampMillis": "1716226320895",
+ "status": {
+  "cmdId": "21a15aad-16aa-4ccb-8986-b29f1d23c4ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321138",
+ "status": {
+  "cmdId": "21a15aad-16aa-4ccb-8986-b29f1d23c4ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321139",
+ "buildStep": {
+  "cmdId": "4d50865e-ac9a-4a63-9a8d-46f0c3ec6ef5",
+  "name": "xclbinutil",
+  "logFile": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin.info",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/xclbinutil --quiet --info --input /home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/alveo_hls4ml.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321139",
+ "status": {
+  "cmdId": "4d50865e-ac9a-4a63-9a8d-46f0c3ec6ef5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321415",
+ "status": {
+  "cmdId": "4d50865e-ac9a-4a63-9a8d-46f0c3ec6ef5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321420",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321421",
+ "status": {
+  "cmdId": "5e2c2d3c-711a-43f0-b273-a1410379d7ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321529",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/reports/link/v++_link_alveo_hls4ml_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 20 10:32:01 2024",
+ "timestampMillis": "1716226321530",
+ "report": {
+  "path": "/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.sw_emu.xilinx_u55c_gen3x16_xdma_3_202210_1/v++_link_alveo_hls4ml_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
