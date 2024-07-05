@@ -131,7 +131,11 @@ ifeq ($(HOST_ARCH), x86)
 endif
 endif
 ifeq ($(HOST_ARCH), x86)
+<<<<<<< HEAD
 	# perf_analyze profile -i profile_summary.csv -f html
+=======
+	perf_analyze profile -i profile_summary.csv -f html
+>>>>>>> 4bf9471577d06daf43b4995f22a209a7d46afbd5
 endif
 
 sd_card: $(EXECUTABLE) $(BINARY_CONTAINERS) emconfig
