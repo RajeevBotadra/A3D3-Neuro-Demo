@@ -1,0 +1,2 @@
+pynq
+#git+https://github.com/Gabriele-bot/hls4ml.git@Alveo_backend#egg=hls4ml[profiling]
