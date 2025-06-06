@@ -56,8 +56,8 @@ endif
 #Include Libraries
 include $(ABS_COMMON_REPO)/libs/opencl/opencl.mk
 include $(ABS_COMMON_REPO)/libs/xcl2/xcl2.mk
-CXXFLAGS += $(xcl2_CXXFLAGS) -I./src/ -I./src/nnet_utils/ $(opencl_CXXFLAGS)
-LDFLAGS += $(xcl2_LDFLAGS)
+CXXFLAGS += $(xcl2_CXXFLAGS) -I./src/ -I./src/nnet_utils/ $(opencl_CXXFLAGS) -I /opt/xilinx/xrt/include
+LDFLAGS += $(xcl2_LDFLAGS) -L /opt/xilinx/xrt/lib -lxrt_coreutil
 HOST_SRCS += $(xcl2_SRCS)
 CXXFLAGS += $(opencl_CXXFLAGS) -Wall -O0 -g -std=c++11 -DIS_$(HLS4ML_PROJ_TYPE) -DHLS4ML_DATA_DIR=./
 LDFLAGS += $(opencl_LDFLAGS) -I$(XILINX_VIVADO)/include/ -I$(XILINX_HLS)/include/ -Wno-unknown-pragmas
@@ -131,11 +131,7 @@ ifeq ($(HOST_ARCH), x86)
 endif
 endif
 ifeq ($(HOST_ARCH), x86)
-<<<<<<< HEAD
-	# perf_analyze profile -i profile_summary.csv -f html
-=======
 	perf_analyze profile -i profile_summary.csv -f html
->>>>>>> 4bf9471577d06daf43b4995f22a209a7d46afbd5
 endif
 
 sd_card: $(EXECUTABLE) $(BINARY_CONTAINERS) emconfig

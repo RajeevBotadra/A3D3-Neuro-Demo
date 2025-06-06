@@ -157,6 +157,10 @@ int main(int argc, char** argv)
 //=====================
 //Input
 //=====================
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 4bf9471577d06daf43b4995f22a209a7d46afbd5
 
     // Load input data from text file
     std::ifstream fin(datadir+"/tb_input_features.dat");
@@ -243,8 +247,13 @@ int main(int argc, char** argv)
         fout << "FPGA time: " << duration_total/nevents << " ns \n";
         std::cout << "Write data time: " << duration_ns1_W/nevents << " ns" << std::endl;
         fout << "Write data time: " << duration_ns1_W/nevents << " ns \n";
+<<<<<<< HEAD
+        std::cout << "Kernel execution wowo time: " << duration_ns1_K/nevents << " ns" << std::endl;
+        fout << "Kernel execution wowo time: " << duration_ns1_K/nevents << " ns \n";
+=======
         std::cout << "Kernel execution time: " << duration_ns1_K/nevents << " ns" << std::endl;
         fout << "Kernel execution time: " << duration_ns1_K/nevents << " ns \n";
+>>>>>>> 4bf9471577d06daf43b4995f22a209a7d46afbd5
         std::cout << "Read data time: " << duration_ns1_R/nevents << " ns" << std::endl;
         fout << "Read data time: " << duration_ns1_R/nevents << " ns" << std::endl;
 //=====================

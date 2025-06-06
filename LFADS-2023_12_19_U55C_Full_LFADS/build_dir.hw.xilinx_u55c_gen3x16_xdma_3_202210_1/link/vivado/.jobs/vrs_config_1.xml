@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="vpl" LaunchDir="/home/biloba/Documents/Repositories/A3D3-Neuro-Demo/LFADS-2023_12_19_U55C_Full_LFADS/build_dir.hw.xilinx_u55c_gen3x16_xdma_3_202210_1/link/vivado/vpl" FlowId="VPL_HW" FromStepId="create_project" ToStepId="impl"/>
-</Runs>
-
