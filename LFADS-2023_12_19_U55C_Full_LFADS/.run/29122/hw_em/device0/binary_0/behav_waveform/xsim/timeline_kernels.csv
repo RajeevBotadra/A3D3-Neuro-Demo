@@ -1,3 +1,0 @@
-Kernel trace events
-Device, Binary, Kernel, Compute Unit, Function, Data Type, Index, Start Time (ms), End Time (ms), Value
-xilinx_u55c_gen3x16_xdma_3_202210_1-0,alveo_hls4ml,alveo_hls4ml,alveo_hls4ml_1,top,top,0,0.011684,0.227350,0
